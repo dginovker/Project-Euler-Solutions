@@ -6,6 +6,7 @@ import java.util.Arrays;
     Problem 11
     Found on https://projecteuler.net/problem=11
     Solution by Daniel Ginovker
+    1ms solution
  */
 
 public class Problem11 {
@@ -14,12 +15,16 @@ public class Problem11 {
         int[][] grid = getGrid();
         int largest = 0;
 
+        long start = System.currentTimeMillis();
+
         largest = getLargest(grid, true, false, largest);
         largest = getLargest(grid, false, true, largest);
         largest = getLargest(grid, true, true, largest);
         largest = getBottomDiag(grid, largest); //Edgecase where I have to count backwards on the row, so it can't be done in the same algorithm
 
+        long stop = System.currentTimeMillis();
         System.out.println("Largest is " + largest);
+        System.out.println("Time: " + (stop-start) + "ms");
     }
 
     private static int getBottomDiag(int[][] grid, int oldLargest) {
@@ -77,7 +82,7 @@ public class Problem11 {
     }
 
     private static int[][] getGrid() throws Exception {
-        BufferedReader reader = new BufferedReader(new FileReader("Project11/src/grid.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("grid.txt"));
         int[][] grid = new int[20][20];
         int gridIndex = 0;
         String line = reader.readLine();
