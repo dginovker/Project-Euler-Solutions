@@ -5,7 +5,6 @@
     83ms solution
  */
 
-import java.util.HashMap;
 
 public class Problem14 {
 

@@ -1,13 +1,13 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.Arrays;
-
 /*
     Problem 11
     Found on https://projecteuler.net/problem=11
     Solution by Daniel Ginovker
     1ms solution
  */
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.Arrays;
 
 public class Problem11 {
     public static final int GRID_DIM = 20;
