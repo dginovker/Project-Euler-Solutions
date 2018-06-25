@@ -1,6 +1,6 @@
 /*
     Problem 17
-    Found on https://projecteuler.net/problem=17-
+    Found on https://projecteuler.net/problem=17
     Solution by Daniel Ginovker
     0ms solution
     Notes: This is a disgusting problem

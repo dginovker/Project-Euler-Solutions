@@ -2,7 +2,7 @@
     Problem 67
     Found on https://projecteuler.net/problem=67
     Solution by Daniel Ginovker
-    46ms solution
+    58ms solution
  */
 
 
